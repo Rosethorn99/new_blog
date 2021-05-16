@@ -1,6 +1,6 @@
 # iBlog
-基于 Node.js 的开源个人博客系统，现代化的 UI 和用户体验。支持桌面端和移动端访问，支持深色模式，支持 [Docker](https://www.docker.com/) 部署。  
-**不仅仅是博客，更是 Demo**，是适合新人入门学习的完整项目。
+基于 Node.js 的开源个人博客系统，现代化的 UI 和用户体验。支持桌面端和移动端访问，支持深色模式。  
+**不仅仅是博客，更是 一个成功的过程**
 
 ## 目录
 - [界面预览](#界面预览)
@@ -30,16 +30,9 @@
 ![首页](./preview_1.png)
 * 后台管理
 ![后台](./preview_2.png)
-* 移动端
-![移动端](./preview_3.png)
 
 ## 在线实例
-我的博客 [https://skysun.name/](https://skysun.name/)
-
-## 分支说明
-* 当前分支 (v2.0.0) 基于 [TypeScript](https://www.typescriptlang.org/) + [NuxtJS](https://nuxtjs.org/)
-* [v1.0.0](https://github.com/eshengsky/iBlog/tree/v1.0.0) 分支基于 JavaScript + [ExpressJS](https://expressjs.com/)
-* [iBlog.Net](https://github.com/eshengsky/iBlog.Net) 基于 C# + [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
+我的博客 [https://b.abblly.com/](https://b.abblly.com/)
 
 ## 技术构成
 * 开发语言 [TypeScript](https://www.typescriptlang.org/)
@@ -130,69 +123,3 @@ $ yarn global add pm2
 ```Shell
 $ pm2 start pm2.json
 ```
-
-### 使用noginx
-[noginx](https://github.com/eshengsky/noginx) 是基于 Node.js 的 HTTP 及反向代理服务器（类似 nginx），如果你有多台 iBlog 服务器实例，你可以使用 [noginx](https://github.com/eshengsky/noginx) 进行代理转发和负载均衡。
-
-## Docker
-
-iBlog 支持使用 [Docker](https://www.docker.com/) 容器快速部署并启动项目。
-
-### 安装Docker
-
-在 [官方下载页面](https://www.docker.com/get-started) 选择对应平台的 Docker Desktop 下载并安装。
-
-### 制作镜像
-
-在项目根目录下执行如下命令创建镜像文件：
-```Shell
-$ yarn run dockerImage
-```
-
-如果创建成功，你可以使用如下命令查看到生成的镜像：
-```Shell
-$ docker image ls
-```
-
-### 创建容器
-
-执行如下命令创建容器：
-```Shell
-$ yarn run dockerRun
-```
-
-### 容器管理
-
-通过 Docker Desktop 执行启动、停止、查看日志等操作。
-![Docker Desktop](./preview_4.png)
-
-## 更新日志
-
-请直接查看 [Commit](https://github.com/eshengsky/iBlog/commits/master) 记录。
-
-## [TODO](./TODO.md)
-
-项目的后续更新计划，欢迎提交 [PR](https://github.com/eshengsky/iBlog/pulls)。
-
-## 许可协议
-MIT License
-
-Copyright (c) 2020 Sky.Sun 孙正华
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
