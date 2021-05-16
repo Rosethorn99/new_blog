@@ -10,11 +10,11 @@
           <h4>{{ profile.cnName }}</h4>
         </div>
         <!-- eslint-disable-next-line vue/no-v-html -->
-        <div class="body" v-html="profile.introduction" />
+        <!-- <div class="body" v-html="profile.introduction" />
         <div v-if="profile.github || profile.email" class="footer">
           <a v-if="profile.github" :href="profile.github" title="GitHub" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /> {{ profile.github }}</a>
           <span v-if="profile.email" title="Email"><font-awesome-icon :icon="['far', 'envelope']" /> {{ profile.email }}</span>
-        </div>
+        </div> -->
       </div>
     </div>
     <div v-else class="empty-profile">

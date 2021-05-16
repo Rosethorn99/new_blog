@@ -1,19 +1,19 @@
 <template>
   <div class="layout-footer">
-    {{ year }} © Powered by
-    <a
+    {{ year }} © Powered by LiangZhen
+    <!-- <a
       href="https://github.com/eshengsky/iBlog"
       target="_blank"
-    >iBlog</a>
+    >iBlog</a> -->
     <span v-if="settings.recordInfo" class="record-info">
       |
       <a href="http://www.beian.miit.gov.cn">{{ settings.recordInfo }}</a>
     </span>
     <span v-if="showLogin" class="admin-link">
-      |
+      <!-- |
       <nuxt-link to="/admin">
         后台管理
-      </nuxt-link>
+      </nuxt-link> -->
     </span>
   </div>
 </template>
